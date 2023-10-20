@@ -41,7 +41,8 @@ android {
 }
 
 dependencies {
-    implementation( project(":ShakeTrace"))
+    implementation("com.github.theRockAkash:ShakeTrace:1.1.0")
+   // implementation( project(":ShakeTrace"))
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
