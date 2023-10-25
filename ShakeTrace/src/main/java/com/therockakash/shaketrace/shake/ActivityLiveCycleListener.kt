@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.shake
+package com.therockakash.shaketrace.shake
 
 import android.app.Activity
 import android.app.Application

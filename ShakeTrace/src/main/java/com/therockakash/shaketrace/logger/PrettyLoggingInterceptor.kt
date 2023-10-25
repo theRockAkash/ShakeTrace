@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.logger
+package com.therockakash.shaketrace.logger
 
 
 import okhttp3.*
@@ -111,7 +111,7 @@ class PrettyLoggingInterceptor private constructor(private val builder: Builder)
         var logger: Logger? = null
             private set
         var isMockEnabled = false
-        var dir =File("/data/user/0/com.creatorstool.shaketrace/cache")
+        var dir =File("/data/user/0/com.therockakash.shaketrace/cache")
         var sleepMs: Long = 0
         var listener: BufferListener? = null
 

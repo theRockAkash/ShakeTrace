@@ -1,14 +1,13 @@
-package com.creatorstool.shaketrace.shake
+package com.therockakash.shaketrace.shake
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.creatorstool.shaketrace.databinding.ActivityShakeBinding
+import com.therockakash.shaketrace.databinding.ActivityShakeBinding
+
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 
 import java.io.BufferedReader

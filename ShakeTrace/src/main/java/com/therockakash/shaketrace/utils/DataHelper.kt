@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.utils
+package com.therockakash.shaketrace.utils
 
 /**
  * @Created by akash on 7/20/2023.

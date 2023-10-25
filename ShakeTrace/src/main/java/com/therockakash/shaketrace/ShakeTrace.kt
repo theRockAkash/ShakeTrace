@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace
+package com.therockakash.shaketrace
 
 import android.app.Application
 import android.content.Context.SENSOR_SERVICE
@@ -9,9 +9,9 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.util.Log
-import com.creatorstool.shaketrace.shake.ActivityLiveCycleListener
-import com.creatorstool.shaketrace.shake.AppStateListener
-import com.creatorstool.shaketrace.shake.ShakeActivity
+import com.therockakash.shaketrace.shake.ActivityLiveCycleListener
+import com.therockakash.shaketrace.shake.AppStateListener
+import com.therockakash.shaketrace.shake.ShakeActivity
 import java.io.File
 import java.io.IOException
 import java.io.PrintWriter
@@ -32,7 +32,7 @@ class ShakeTrace  {
      private var lastAcceleration = 0f
 
      fun init(context: Application) {
-         this.context=context
+         Companion.context =context
 
 
          clearLogs()

@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.utils
+package com.therockakash.shaketrace.utils
 
 import android.content.Context
 import android.widget.Toast

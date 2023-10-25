@@ -4,9 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import com.app.mvvmprojectsetup.R
-import com.creatorstool.shaketrace.ShakeTrace
-import com.creatorstool.shaketrace.utils.DataHelper
-import com.creatorstool.shaketrace.utils.Utils
+
+import com.therockakash.shaketrace.ShakeTrace
+import com.therockakash.shaketrace.utils.DataHelper
+import com.therockakash.shaketrace.utils.Utils
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name=".shake.ShakeActivity"
+            android:name="com.therockakash.shaketrace.shake.ShakeActivity"
             android:launchMode="singleInstance"
             android:exported="false" />
     </application>

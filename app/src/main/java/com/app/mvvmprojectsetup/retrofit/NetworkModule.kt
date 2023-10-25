@@ -3,8 +3,9 @@ package com.app.mvvmprojectsetup.retrofit
 import android.content.Context
 import android.util.Log.VERBOSE
 import com.app.mvvmprojectsetup.BuildConfig
-import com.creatorstool.shaketrace.logger.Level
-import com.creatorstool.shaketrace.logger.PrettyLoggingInterceptor
+import com.therockakash.shaketrace.logger.Level
+import com.therockakash.shaketrace.logger.PrettyLoggingInterceptor
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

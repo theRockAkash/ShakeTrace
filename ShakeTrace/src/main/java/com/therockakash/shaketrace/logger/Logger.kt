@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.logger
+package com.therockakash.shaketrace.logger
 
 import okhttp3.internal.platform.Platform
 import okhttp3.internal.platform.Platform.Companion.INFO

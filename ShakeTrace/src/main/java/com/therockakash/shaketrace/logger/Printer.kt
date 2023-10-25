@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.logger
+package com.therockakash.shaketrace.logger
 
 
 import android.util.Log
@@ -232,14 +232,17 @@ class Printer private constructor() {
 
         private fun appendLog(text: String?, dir: File) {
 
-            if (dir== File("/data/user/0/com.creatorstool.shaketrace/cache"))
+            if (dir== File("/data/user/0/com.therockakash.shaketrace/cache"))
+            {
+                Log.e("ShakeTrace", "Pass cashe dir path to view logs in app.")
                 return
+            }
                 if (!this::logFile.isInitialized)
                     logFile = File(dir, "log.file")
                 if (!logFile.exists())
                     logFile.createNewFile()
 
-                Log.w("TAG", "appendLog: $dir")
+
                 if (text != null) {
                     logFile.appendText(text)
                     logFile.appendText("\n")

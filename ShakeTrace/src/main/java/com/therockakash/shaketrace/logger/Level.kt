@@ -1,4 +1,4 @@
-package com.creatorstool.shaketrace.logger
+package com.therockakash.shaketrace.logger
 
 /**
  * Created by akash on 7/20/2023.

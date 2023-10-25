@@ -1,7 +1,8 @@
 package com.app.mvvmprojectsetup.app
 
 import android.app.Application
-import com.creatorstool.shaketrace.ShakeTrace
+import com.therockakash.shaketrace.ShakeTrace
+
 import dagger.hilt.android.HiltAndroidApp
 
 /**
