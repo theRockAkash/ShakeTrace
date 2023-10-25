@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MVVM Project Setup"
+rootProject.name = "ShakeTrace"
 include(":app")
 include(":ShakeTrace")
