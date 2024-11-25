@@ -32,6 +32,8 @@ dependencies {
 - **Shake to View Logs:** When the device is physically shaken, the library displays a screen with the logged network calls. This provides a quick and convenient way to check network logs without needing to connect the device for debugging.
 
 - **Easy Integration:** The library provides a simple API for integration with existing Android projects. It uses common Android libraries and components, making it compatible with most Android projects.
+  
+# Kotlin Syntax
 
 ### For Logs, add this code in your app
 #add PrettyLoggingInterceptor in your http client
@@ -48,12 +50,33 @@ dependencies {
 ```
 
 
-#Add in application class
+#Add in application class or in Launcher activity
 ```kotlin
   override fun onCreate() {
         super.onCreate()
  	if (BuildConfig.DEBUG)
            ShakeTrace.init(this) // add this line in onCreate function of application class only if you want to see logs on shake
+    }
+```
+# Java Syntax
+
+### For Logs, add this code in your app
+#add PrettyLoggingInterceptor in your http client
+```java
+  if (BuildConfig.DEBUG) {
+      PrettyLoggingInterceptor.Builder prettyInterceptor = new PrettyLoggingInterceptor.Builder()
+                    .setLevel(com.therockakash.shaketrace.logger.Level.BASIC)
+                    .setCashDir(new File("/data/user/0/{your app packge name}/cache"));
+
+      httpClient.addInterceptor(prettyInterceptor.build())
+   }
+```
+#Add in application class or in Launcher activity
+```java
+  override fun onCreate() {
+        super.onCreate()
+ 	if (BuildConfig.DEBUG)
+          ShakeTrace.Companion.init(getApplication()); // add this line in onCreate function of application class only if you want to see logs on shake
     }
 ```
 
