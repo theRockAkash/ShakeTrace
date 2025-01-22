@@ -9,7 +9,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 21
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -55,7 +55,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.theRockAkash"
                 artifactId = "ShakeTrace"
-                version = "1.0.0"
+                version = "1.4.0"
 
                 from(components["release"])
             }

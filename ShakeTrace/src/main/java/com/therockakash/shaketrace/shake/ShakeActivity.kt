@@ -3,6 +3,8 @@ package com.therockakash.shaketrace.shake
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.therockakash.shaketrace.ShakeTrace
 import com.therockakash.shaketrace.databinding.ActivityShakeBinding
 
 import kotlinx.coroutines.CoroutineScope
@@ -29,7 +31,7 @@ class ShakeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityShakeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        ShakeTrace.bgColor?.let { binding.main.setBackgroundColor(it) }
         CoroutineScope(Dispatchers.IO).launch {
             setLogs()
         }.invokeOnCompletion {
@@ -55,7 +57,10 @@ class ShakeActivity : AppCompatActivity() {
                 stringBuilder.append(buffer)
                 stringBuilder.append("\n")
             }
-            binding.text.text = stringBuilder.toString()
+            lifecycleScope.launch(Dispatchers.Main){
+                binding.text.text = stringBuilder.toString()
+            }
+
 
         } catch (e: Exception) {
             e.printStackTrace()

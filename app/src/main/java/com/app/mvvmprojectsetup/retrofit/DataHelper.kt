@@ -1,4 +1,4 @@
-package com.therockakash.shaketrace.utils
+package com.app.mvvmprojectsetup.retrofit
 
 /**
  * @Created by akash on 7/20/2023.

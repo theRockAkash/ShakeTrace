@@ -4,6 +4,7 @@
 
     <application>
         <activity
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:name="com.therockakash.shaketrace.shake.ShakeActivity"
             android:launchMode="singleInstance"
             android:exported="false" />

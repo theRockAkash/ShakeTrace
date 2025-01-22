@@ -2,8 +2,8 @@ package com.app.mvvmprojectsetup.ui
 
 import com.app.mvvmprojectsetup.retrofit.Api
 import com.app.mvvmprojectsetup.util.NetworkManager
-import com.therockakash.shaketrace.utils.DataHelper
-import com.therockakash.shaketrace.utils.Utils
+import com.app.mvvmprojectsetup.retrofit.DataHelper
+import com.app.mvvmprojectsetup.util.Utils
 
 
 import javax.inject.Inject

@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.app.mvvmprojectsetup.R
 
 import com.therockakash.shaketrace.ShakeTrace
-import com.therockakash.shaketrace.utils.DataHelper
-import com.therockakash.shaketrace.utils.Utils
+import com.app.mvvmprojectsetup.retrofit.DataHelper
+import com.app.mvvmprojectsetup.util.Utils
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

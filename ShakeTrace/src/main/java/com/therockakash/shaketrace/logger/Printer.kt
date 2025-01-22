@@ -61,7 +61,7 @@ class Printer private constructor() {
             val requestBody = body?.let {
                 LINE_SEPARATOR + BODY_TAG + LINE_SEPARATOR + bodyToString(body, header)
             } ?: ""
-            val reqBody = requestBody.split(LINE_SEPARATOR).toTypedArray()
+            val reqBody = requestBody.split(LINE_SEPARATOR.toString()).toTypedArray()
             val reqHead = getRequest(builder.level, header, method)
             var log = "╔═╣ Request ║════════════════"
             var logd = "╔═╣ Request ║ $url ║════════════════════════════════════"

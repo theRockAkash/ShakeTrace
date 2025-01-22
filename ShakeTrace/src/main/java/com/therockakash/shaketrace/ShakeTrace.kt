@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context.SENSOR_SERVICE
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
+import android.graphics.Color
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -30,6 +31,7 @@ class ShakeTrace  {
      private var acceleration = 0f
      private var currentAcceleration = 0f
      private var lastAcceleration = 0f
+       var bgColor:Int?=null
 
      fun init(context: Application) {
          Companion.context =context
@@ -112,7 +114,11 @@ class ShakeTrace  {
              override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {}
          }
      }
+     fun setBackgroundColor(color: String){
+         bgColor= Color.parseColor(color)
+     }
 
  }
+
 
 }

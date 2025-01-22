@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context="com.therockakash.shaketrace.shake.ShakeActivity">
 
     <ImageButton
@@ -26,7 +27,7 @@
         android:layout_marginEnd="8dp"
         android:ellipsize="end"
         android:lines="1"
-        android:text="API Response"
+        android:text="@string/api_response"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -1,4 +1,4 @@
-package com.therockakash.shaketrace.utils
+package com.app.mvvmprojectsetup.util
 
 import android.content.Context
 import android.widget.Toast
